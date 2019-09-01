@@ -5,9 +5,9 @@
   var i;
 
   for(i = 0; i < cmds.length; i++) {
-    cmds[i].addEventListner('click', function(e) {
+    cmds[i].addEventListener('click', function(e) {
       e.preventDefault();
-      if(confirm('are you sure?')) {
+      if (confirm('are you sure?')) {
         document.getElementById('form_' + this.dataset.id).submit();
       }
     });
